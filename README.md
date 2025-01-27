@@ -29,13 +29,13 @@ This configuration is designed to enhance your NeoVim experience for web develop
 1. **Clone the Repository:**
 
    ```bash
-   git clone [https://github.com/waanney/nvim-config.git](https://github.com/waanney/nvim-config.git) ~/.config/nvim
+   git clone https://github.com/waanney/nvim-config.git ~/.config/nvim
    ```
   another path:
 
   
   ```bash
-  git clone [https://github.com/waanney/nvim-config.git](https://github.com/waanney/nvim-config.git) /path/to/nvim/config
+  git clone https://github.com/waanney/nvim-config.git /path/to/nvim/config
   ```
 2. **Install Packages:**
 
