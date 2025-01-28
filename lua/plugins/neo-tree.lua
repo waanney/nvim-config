@@ -4,10 +4,16 @@ return {
 	event = "VeryLazy",
 	dependencies = {
 		"nvim-lua/plenary.nvim",
-		"nvim-tree/nvim-web-devicons",
-		"MunifTanjim/nui.nvim",
 	},
 	config = function()
+		require("neo-tree").setup({
+			filesystem = {
+				filtered_items = {
+					hide_dotfiles = false,
+				},
+        show_hidden = true,
+			},
+		})
 		vim.keymap.set("n", "<C-n>", ":Neotree filesystem reveal left<CR>", {})
 	end,
 }

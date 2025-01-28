@@ -23,10 +23,9 @@ return {
     -- stylua: ignore
     dashboard.section.buttons.val = {
       dashboard.button("n", " " .. " New file", [[<cmd> ene <BAR> startinsert <cr>]]),
-      dashboard.button("m", ""  .. " Mason", "<cmd>Mason<cr>"),
+      dashboard.button("m", " "  .. " Mason", "<cmd>Mason<cr>"),
       dashboard.button("l", "󰒲 " .. " Lazy", "<cmd> Lazy <cr>"),
       dashboard.button("q", " " .. " Quit", "<cmd> qa <cr>"),
-
     }
 		for _, button in ipairs(dashboard.section.buttons.val) do
 			button.opts.hl = "AlphaButtons"

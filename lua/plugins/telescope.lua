@@ -1,7 +1,7 @@
 return {
 	{
 		"nvim-telescope/telescope.nvim",
-    event ="VeryLazy",
+		event = "VeryLazy",
 		tag = "0.1.8", -- Có thể bỏ dòng này để dùng phiên bản mới nhất
 		dependencies = { "nvim-lua/plenary.nvim" },
 		config = function()
@@ -34,6 +34,7 @@ return {
 			local keymap = vim.keymap.set
 			local opts = { noremap = true, silent = true }
 
+			keymap("n", "<leader>rf", require("telescope.builtin").oldfiles, opts)
 			keymap("n", "<leader>ff", "<cmd>Telescope find_files<cr>", opts)
 			keymap("n", "<leader>fg", "<cmd>Telescope live_grep<cr>", opts)
 			keymap("n", "<leader>fb", "<cmd>Telescope buffers<cr>", opts)
@@ -41,8 +42,8 @@ return {
 			-- test zone
 		end,
 	},
-  {
-    "nvim-telescope/telescope-ui-select.nvim",
-    event ="VeryLazy",
-  },
+	{
+		"nvim-telescope/telescope-ui-select.nvim",
+		event = "VeryLazy",
+	},
 }

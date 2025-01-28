@@ -16,6 +16,7 @@ return {
 					"clangd",
 					"tailwindcss",
 					"ts_ls",
+          "html",
 				},
 			})
 		end,
@@ -33,7 +34,7 @@ return {
 			lspconfig.clangd.setup({ capabilities = capabilities })
 			lspconfig.tailwindcss.setup({ capabilities = capabilities })
 			lspconfig.ts_ls.setup({ capabilities = capabilities })
-
+      lspconfig.html.setup({capabilities = capabilities})
 	end,
 	},
 }
