@@ -26,7 +26,6 @@ return {
 				collapsed = true, -- show window as closed/collapsed on start
 				open = "Neotree position=right git_status",
 			},
-
 			{
 				title = function()
 					local buf_name = vim.api.nvim_buf_get_name(0) or "[No Name]"
