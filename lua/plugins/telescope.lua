@@ -28,9 +28,6 @@ return {
 				},
 			})
 
-			-- Tải extension fzf (bắt buộc cho tìm kiếm mờ)
-			pcall(require("telescope").load_extension, "fzf")
-
 			local keymap = vim.keymap.set
 			local opts = { noremap = true, silent = true }
 
